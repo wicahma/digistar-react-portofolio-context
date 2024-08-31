@@ -3,7 +3,7 @@ import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 const About = () => {
   return (
-    <div className="pt-20 px-3 text-gray-900">
+    <div className="pt-20 px-3 text-gray-900 dark:text-gray-400">
       <div className="max-w-full w-[40%] mx-auto px-3">
         <h1 className="text-3xl font-semibold">About me</h1>
         <div className="space-y-4 text-lg mt-3 tracking-wide text-justify">

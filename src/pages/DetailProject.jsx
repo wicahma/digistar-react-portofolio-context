@@ -12,14 +12,14 @@ const DetailProject = () => {
         e.stopPropagation();
         nav("/project");
       }}
-      className="fixed top-0 left-0 h-screen w-screen bg-black/20 flex justify-center items-center z-10"
+      className="fixed top-0 text-gray-900 dark:text-gray-400 left-0 h-screen w-screen bg-black/50 flex justify-center items-center z-10"
     >
       <div
         onClick={(e) => {
           e.stopPropagation();
           e.preventDefault();
         }}
-        className="w-[40%] bg-white h-[80%] rounded-xl border border-gray-400 p-4 overflow-y-auto"
+        className="w-[40%] bg-white dark:bg-gray-900 h-[80%] rounded-xl border border-gray-400 p-4 overflow-y-auto"
       >
         <div className="flex gap-3 items-center">
           <a
@@ -32,7 +32,7 @@ const DetailProject = () => {
           >
             {project.name}
           </a>
-          <p className="bg-orange-400 rounded-lg flex justify-center items-center px-2 text-white text-sm h-fit py-1">
+          <p className="bg-orange-400 dark:bg-orange-600 rounded-lg flex justify-center items-center px-2 text-white text-sm h-fit py-1">
             {project.status}
           </p>
         </div>
@@ -44,7 +44,7 @@ const DetailProject = () => {
               onClick={(e) => e.stopPropagation()}
               href={project.githubUrl[name]}
               target="_blank"
-              className="bg-orange-400 hover:bg-orange-500 transiti duration-300 px-3 py-1 text-white uppercase text-sm font-medium rounded-lg"
+              className="bg-orange-400 hover:bg-orange-500 dark:bg-orange-600 transiti duration-300 px-3 py-1 text-white uppercase text-sm font-medium rounded-lg"
             >
               {name}
             </a>
@@ -55,7 +55,7 @@ const DetailProject = () => {
           {project.techStack.map((tech, index) => (
             <p
               key={index}
-              className="bg-orange-400 text-white px-2 py-1 rounded-lg inline-block text-sm font-medium mt-2"
+              className="bg-orange-400 dark:bg-orange-600 text-white px-2 py-1 rounded-lg inline-block text-sm font-medium mt-2"
             >
               {tech}
             </p>

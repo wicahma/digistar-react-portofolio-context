@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="pt-20 px-3 h-screen text-gray-900 w-screen flex justify-center items-center">
+    <div className="pt-20 px-3 h-screen text-gray-900 dark:text-gray-400 w-screen flex justify-center items-center">
       <div className="">
         <h2 className="text-2xl font-bold">
           Hello, I'm Teguh Dwi Cahya Kusuma
